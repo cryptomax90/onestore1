@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OneStore – Sell your product in 5 minutes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body{background:#FAFAFA}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
+    .brand{font:700 22px Poppins;color:#111}
+    .nav a{font:600 14px Inter;color:#111;text-decoration:none;margin-left:16px}
+    .wrap{max-width:1024px;margin:0 auto;padding:24px}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;margin-top:24px}
+    .h1{font:700 42px Poppins;color:#111}
+    .p{font:400 18px Inter;color:#555}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .btn{min-width:180px;height:54px;border:none;border-radius:12px;background:#7B5BFF;color:#fff;font:600 16px Poppins;cursor:pointer}
+    .btn.outline{background:#fff;color:#7B5BFF;border:1px solid #7B5BFF}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+    .card{background:#fff;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.06);padding:20px}
+    .muted{color:#888;font:400 14px Inter;margin-top:8px}
+    .creators{margin-top:32px}
+    .creator-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .creator{background:#fff;border-radius:12px;padding:16px;border:1px solid #eee}
+    .creator a{color:#7B5BFF;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">OneStore</div>
+    <div>
+      <a href="pricing.html">Pricing</a>
+      <a href="join.html">Create your store</a>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1 class="h1">Sell your product in 5 minutes</h1>
+        <p class="p">No code. Instant Stripe payments. Share your link today.</p>
+        <div class="cta">
+          <a href="join.html"><button class="btn">Create your store</button></a>
+          <a href="pricing.html"><button class="btn outline">See pricing</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="card"><b>One‑page checkout</b><p class="muted">Keep buyers focused. One product, one link.</p></div>
+      <div class="card"><b>Digital or physical</b><p class="muted">Downloads or shipping—both supported.</p></div>
+      <div class="card"><b>Powered by Stripe</b><p class="muted">Fast, secure payments worldwide.</p></div>
+    </section>
+
+    <section class="creators">
+      <h3 class="p" style="font-weight:600">Featured creators</h3>
+      <div class="creator-grid">
+        <!-- Example entries; replace or remove -->
+        <div class="creator">Alex – <a href="stores/alex/">View store</a></div>
+        <div class="creator">Jamie – <a href="stores/jamie/">View store</a></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
