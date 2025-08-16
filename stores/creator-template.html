@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{STORE_NAME}} – {{PRODUCT_NAME}}</title>
+  <!-- IMPORTANT: two levels up to reach repo root styles -->
+  <link rel="stylesheet" href="../../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body{background:#FAFAFA}
+    .wrap{max-width:560px;margin:0 auto;padding:24px}
+    .h1{font:700 28px Poppins;color:#111}
+    .price{font:700 36px Poppins;color:#111;margin:8px 0}
+    .img{width:100%;height:auto;border-radius:16px;background:#eee}
+    .btn{display:block;width:100%;height:56px;border:none;border-radius:12px;background:#7B5BFF;color:#fff;font:600 18px Poppins;cursor:pointer;margin-top:16px}
+    .muted{color:#888;font:400 14px Inter;margin-top:6px;text-align:center}
+    .qr{display:block;margin:16px auto;width:128px;height:128px;border-radius:8px;background:#fff;border:1px solid #eee;object-fit:cover}
+    .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .brand{font:700 18px Poppins}
+    .brand a{color:#7B5BFF;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">{{STORE_NAME}}</div>
+      <div class="muted">Powered by <a href="../../join.html">OneStore</a></div>
+    </div>
+
+    <img class="img" src="{{IMAGE_URL}}" alt="{{PRODUCT_NAME}}"/>
+    <h1 class="h1">{{PRODUCT_NAME}}</h1>
+    <div class="price">${{PRICE}}</div>
+
+    <!-- Stripe Payment Link for THIS creator's product -->
+    <a href="{{STRIPE_PAYMENT_LINK}}" target="_blank" rel="noopener">
+      <button class="btn">Buy Now – ${{PRICE}}</button>
+    </a>
+
+    <!-- Optional QR (remove if you don't want it) -->
+    <img class="qr" src="{{QR_IMAGE_URL}}" alt="QR"/>
+    <p class="muted">Add this link to your TikTok/IG bio and start selling.</p>
+  </div>
+</body>
+</html>
